@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Birthday Surprise</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="assets/amonus-ico.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/giftbox.css" />
+    <link rel="stylesheet" href="css/amongus.css" />
+  </head>
+  <body>
+    <main>
+      <img class="char hide" style="left:80px; top: 280px;" src="assets/main.png" alt="guest">
+      <img class="char  hide" style="left:196px; top: 170px;" src="assets/others1.png" alt="guest">
+      <img class="char flip hide" style="left:90px; top: 340px;" src="assets/others2.png" alt="guest">
+      <img class="char hide" style="left:220px; top: 310px;" src="assets/others3.png" alt="guest">
+      <img class="char hide" style="left:273px; top: 400px;" src="assets/others4.png" alt="guest">
+      <img class="char hide" style="left:87px; top: 460px;" src="assets/others5.png" alt="guest">
+      <img class="char hide" style="left:192px; top: 430px;" src="assets/others6.png" alt="guest">
+      <img class="char flip hide" style="right:100px; top: 340px;" src="assets/others2.png" alt="guest">
+      <img class="char hide" style="right:190px; top: 310px;" src="assets/others3.png" alt="guest">
+      <img class="char flip hide" style="right:173px; top: 400px;" src="assets/others4.png" alt="guest">
+      <img class="char flip hide" style="right:110px; top: 280px;" src="assets/main.png" alt="guest">
+      <img class="char flip hide" style="right:196px; top: 170px;" src="assets/others1.png" alt="guest">
+      <div class="bday_card hide" onclick="openCard()">Happy <br/> Birthday</div>
+      <div class="button_start" onclick="togglelight()"></div>
+      <div class="lights-out"></div>
+      <div class="enlarge_card hide" onclick="closeCard()">
+        <div class="card_itself">
+          <h1>HAPPY BIRTHDAY</h1>
+          <p>
+            Wishing you a magical birthday filled with surprises. I know you wanted a party so I made a party for you using among us characters. Its not much but I hope you like it.
+            <br /><br />
+            oh and since your birthday is on the same day as valentines day, Happy Valentines Day too!
+            <br /><br />
+          </p>
+          <p class="center">May 2021 be the year for you!  :D</p>
+        </div>
+      </div>
+      <div id="balloon-container"></div>
+    </main>
+    <div class="giftbox">
+      <section id="js-main" class="main">
+ 
+        <div id="js-left-peel" class="peel-item peel-item--left">
+          <div class="peel-item__bg">
+            <div id="js-left-inner" class="peel-item__bg__inner"></div>
+          </div>
+          <div class="peel-item__white"></div>
+          <div class="peel-item__gradient"></div>
+        </div>
+        <div id="js-right-peel" class="peel-item peel-item--right">
+          <div class="peel-item__bg">
+            <div id="js-right-inner" class="peel-item__bg__inner"></div>
+          </div>
+          <div class="peel-item__white"></div>
+          <div class="peel-item__gradient"></div>
+        </div>
+        <div id="js-line1" class="line-item line-item--hor"></div>
+        <div id="js-line2" class="line-item line-item--vert">
+          <div class="bow">
+            <div class="bow__content"></div>
+            <div class="threads">
+              <div class="thread-left">
+                <div class="thread-left__content"></div>
+              </div>
+              <div class="thread-right">
+                <div class="thread-right__content"></div>
+              </div>
+            </div><div href="#" id="js-tag" class="tag">
+              <div class="tag__content"></div>
+              <div class="tag__text">
+                <b>Happy 20<sup>th</sup> Birthday</b>
+                <br/>
+                <small>(scroll down to unwrap)</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/tweenmax.min.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/jquery.superscrollorama.js'></script>
+    <script src='https://s3-us-west-2.amazonaws.com/s.cdpn.io/6859/iscroll.js'></script>
+    <script src="js/giftbox.js"></script>
+    <script src="js/amongus.js"></script>
+  </body>
+</html>
