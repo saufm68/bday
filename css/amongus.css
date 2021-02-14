@@ -1,152 +1,152 @@
 main .char {
-	position: absolute;
-	width: 5.5em;
-	height: 5em;
+  position: absolute;
+  width: 5.5em;
+  height: 5em;
 }
 
 .flip {
-	transform: scaleX(-1);
+  transform: scaleX(-1);
 }
 
 .hide {
-	display: none !important;
+  display: none !important;
 }
 
 .lights-out {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	z-index: 51;
-	background-color: #050505;
-	opacity: 0.9;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 51;
+  background-color: #050505;
+  opacity: 0.9;
 }
 
 .button_start {
-	position: absolute;
-	width: 2em;
-	height: 2em;
-	background-image: url(../assets/button.png);
-	background-size: contain;
-	background-repeat: no-repeat;
-	background-position: center;
-	right: 30px;
-	top: 27px;
-	z-index: 52;
-	cursor: pointer;
+  position: absolute;
+  width: 2em;
+  height: 2em;
+  background-image: url(../assets/button.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  right: 30px;
+  top: 35px;
+  z-index: 52;
+  cursor: pointer;
 }
 
 .button_start:hover {
-	background-image: url(../assets/button-h.png);
+  background-image: url(../assets/button-h.png);
 }
 
 .bday_card {
-	width: 40px;
-	height: 50px;
-	color: black;
-	border: 2px solid black;
-	background-color: plum;
-	text-align: center;
-	font-size: 0.2rem;
-	bottom: 20px;
-	right: 50px;
-	position: absolute;
-	z-index: 52;
-	padding-top: 10px;
-	cursor: pointer;
-	border-radius: 10px;
+  width: 40px;
+  height: 50px;
+  color: black;
+  border: 2px solid black;
+  background-color: plum;
+  text-align: center;
+  font-size: 0.2rem;
+  bottom: 20px;
+  right: 50px;
+  position: absolute;
+  z-index: 52;
+  padding-top: 10px;
+  cursor: pointer;
+  border-radius: 10px;
 }
 
 .bday_card:hover {
-	border: 2px solid white;
+  border: 2px solid white;
 }
 
 .enlarge_card {
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 53;
-	width: 100vw;
-	height: 100vh;
-	display: flex;
-	align-items: center;
-	justify-content: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 53;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .card_itself {
-	border: 3px solid black;
-	max-width: 400px;
-	width: 80%;
-	height: 85%;
-	background-color: plum;
-	border-radius: 20px;
-	padding: 20px;
-	text-align: justify;
+  border: 3px solid black;
+  max-width: 400px;
+  width: 80%;
+  height: 85%;
+  background-color: plum;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: justify;
 }
 
 .card_itself h1 {
-	text-align: center;
-	font-size: xxx-large;
+  text-align: center;
+  font-size: xxx-large;
 }
 
 .center {
-	text-align: center;
+  text-align: center;
 }
 
 #balloon-container {
-	height: 100vh;
-	padding: 1em;
-	box-sizing: border-box;
-	display: flex;
-	flex-wrap: wrap;
-	overflow: hidden;
-	position: fixed;
-	z-index: 51;
-	top: 0;
-	left: 0;
+  height: 100vh;
+  padding: 1em;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: hidden;
+  position: fixed;
+  z-index: 51;
+  top: 0;
+  left: 0;
 }
 
 .balloon {
-	height: 125px;
-	width: 105px;
-	border-radius: 75% 75% 70% 70%;
-	position: relative;
+  height: 125px;
+  width: 105px;
+  border-radius: 75% 75% 70% 70%;
+  position: relative;
 }
 
 .balloon:before {
-	content: "";
-	height: 75px;
-	width: 1px;
-	padding: 1px;
-	background-color: #fdfd96;
-	display: block;
-	position: absolute;
-	top: 125px;
-	left: 0;
-	right: 0;
-	margin: auto;
+  content: "";
+  height: 75px;
+  width: 1px;
+  padding: 1px;
+  background-color: #fdfd96;
+  display: block;
+  position: absolute;
+  top: 125px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 .balloon:after {
-	content: "▲";
-	text-align: center;
-	display: block;
-	position: absolute;
-	color: inherit;
-	top: 120px;
-	left: 0;
-	right: 0;
-	margin: auto;
+  content: "▲";
+  text-align: center;
+  display: block;
+  position: absolute;
+  color: inherit;
+  top: 120px;
+  left: 0;
+  right: 0;
+  margin: auto;
 }
 
 @keyframes float {
-	from {
-		transform: translateY(100vh);
-		opacity: 1;
-	}
-	to {
-		transform: translateY(-300vh);
-		opacity: 0;
-	}
+  from {
+    transform: translateY(100vh);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-300vh);
+    opacity: 0;
+  }
 }
